@@ -1,0 +1,49 @@
+<html>
+  <style>
+    img { 
+    max-width: 100%;
+    height: auto;
+  }
+    .i1{
+      grid-area: content;
+      justify-self: center;
+    }
+    .title2 {
+      grid-area: header;
+      height: 100px;
+      justify-self:center;
+    }
+    .cont{
+      background: PaleTurquoise;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 100px auto auto auto;
+      grid-template-areas:
+      "header header header"
+      "content content content"
+      "co1 co1 co1"
+      "footer footer footer";
+    }
+    .i2{
+      grid-area: co1;
+    }
+    .i3{
+      grid-area: footer;
+    }
+</style>
+  <body>
+    <div id="main" class="cont">
+      <h1 id="title" class="title2">Martin Luther King Jr.</h1>
+      <div id="img-div" class="i1"> 
+        <img id="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Martin_Luther_King%2C_Jr..jpg/220px-Martin_Luther_King%2C_Jr..jpg" alt="">
+        <p id="img-caption">King in 1964</p>
+      </div>
+      <div class="i2">
+        <p id="tribute-info">Martin Luther King Jr. (born Michael King Jr.; January 15, 1929 – April 4, 1968) was an American Baptist minister and activist who became the most visible spokesman and leader in the American civil rights movement from 1955 until his assassination in 1968. Renamed after German reformer Martin Luther, King advanced civil rights through nonviolence and civil disobedience, inspired by his Christian beliefs and the nonviolent activism of Mahatma Gandhi. He was the son of early civil rights activist and minister Martin Luther King Sr. </p>
+      </div>
+      <div class="i3">
+        <a id="tribute-link" href="https://en.wikipedia.org/wiki/Martin_Luther_King_Jr." target="_blank"> This link directs to wikipedia.</a>
+      </div>
+    </div>
+  </body>
+</html>
